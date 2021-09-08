@@ -14,7 +14,7 @@ import {
   IconButton,
   Link,
 } from '@material-ui/core/';
-import { LinkedIn, GitHub, Web } from '@material-ui/icons';
+import { GitHub, Web } from '@material-ui/icons';
 const useStyles = makeStyles((theme) => ({
   projContainer: {
     paddingTop: theme.spacing(3),
@@ -99,7 +99,7 @@ const Projects = () => {
                   color="textSecundary"
                   component="h2"
                 >
-                  Clone Netflix with react js using tmdb
+                  Portifolio pessoal usando React js e Material UI
                 </Typography>
               </CardContent>
             </CardActionArea>

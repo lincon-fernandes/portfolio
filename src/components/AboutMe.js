@@ -3,7 +3,6 @@ import Photo from '../img/aboutImage.jpg';
 import Resume from '../docs/Currículo.pdf';
 import {
   Container,
-  Avatar,
   Typography,
   Grid,
   IconButton,
