@@ -14,17 +14,20 @@ const useStyles = makeStyles((theme) => ({
   },
   subtitle: {
     color: '#fff',
-    paddingBottom: '5rem',
   },
   typedContainer: {
-    paddingTop: '5rem',
+    display: 'flex',
 
-    height: '30vw',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
     textAlign: 'center',
-    zIndex: -1,
+    paddingTop: '1rem',
+    marginBottom: '1rem',
+    height: '400px',
+
     backgroundImage:
       'url(https://images.freeimages.com/images/large-previews/443/php-code-1242330.jpg)',
-    background: 'cover no-repeat',
   },
 }));
 

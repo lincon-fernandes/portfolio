@@ -14,7 +14,7 @@ import { LinkedIn, GitHub, WhatsApp, Mail } from '@material-ui/icons';
 
 const Contact = () => {
   return (
-    <Container style={{ marginTop: '3rem' }}>
+    <Container id="contact" style={{ marginTop: '3rem' }}>
       <Grid container>
         <Grid item md={8} xs={12}>
           <Grid container>
@@ -39,14 +39,14 @@ const Contact = () => {
           </Grid>
         </Grid>
         <Grid item md={4} xs={12}>
-          <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde
-            dolores cupiditate vitae.
-          </Typography>
+          <Typography>Ou entre em contato:</Typography>
           <Divider></Divider>
           <Grid container>
             <Grid item sm={12}>
-              <IconButton>
+              <IconButton
+                href="https://api.whatsapp.com/send?1=pt_BR&phone=5541987291433"
+                target="_blank"
+              >
                 <WhatsApp />
                 <Typography>41 987291433</Typography>
               </IconButton>

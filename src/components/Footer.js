@@ -9,8 +9,8 @@ function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary">
       {'Copyright © '}
-      <Link color="inherit" href="https://material-ui.com/">
-        Your Website
+      <Link color="inherit" href="https://github.com/lincon-fernandes">
+        Lincon
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -36,7 +36,11 @@ export default function StickyFooter() {
     <footer className={classes.footer}>
       <Container maxWidth="sm">
         <Typography variant="body1">
-          My sticky footer can be found here.
+          Feito com{' '}
+          <spam role="img" aria-label="coração">
+            ❤
+          </spam>{' '}
+          por Lincon Pietrochinski Fernandes
         </Typography>
         <Copyright />
       </Container>

@@ -1,6 +1,6 @@
 import React from 'react';
 import Photo from '../img/aboutImage.jpg';
-import Resume from '../docs/Currículo.pdf';
+import Resume from '../docs/curriculo.pdf';
 import {
   Container,
   Typography,
@@ -27,6 +27,7 @@ const useStyles = makeStyles((theme) => ({
     margin: 'auto',
     paddingTop: '56.25%', // 16:9
   },
+  about: {},
 }));
 const AboutMe = () => {
   const classes = useStyles();
@@ -51,35 +52,47 @@ const AboutMe = () => {
               title="Paella dish"
             />
           </Grid>
-          <Grid item md={6} xs={12} style={{ marginTop: '0.5rem' }}>
+          <Grid
+            item
+            md={6}
+            xs={12}
+            className={classes.about}
+            style={{ marginTop: '0.5rem' }}
+          >
             <Typography>Sobre Mim</Typography>
             <Typography style={{ marginTop: '1.5rem' }}>
               Programador iniciante, autodidata, interassado em tecnologias de
               programaçao frontend, react next e material UI,
             </Typography>
-            <Link
-              href="https://github.com/lincon-fernandes/clone-netflix-react"
-              rel="noreferrer"
-              target="_blank"
-            >
-              <IconButton>
-                <LinkedIn />
-              </IconButton>
-            </Link>
-            <Link
-              href="https://github.com/lincon-fernandes/clone-netflix-react"
-              rel="noreferrer"
-              target="_blank"
-            >
-              <IconButton>
-                <GitHub />
-              </IconButton>
-            </Link>
-            <Link href={Resume} rel="noreferrer" target="_blank">
-              <IconButton>
-                <InsertDriveFile />
-              </IconButton>
-            </Link>
+            <Box>
+              {' '}
+              <Link
+                href="https://www.linkedin.com/in/lincon-fernandes-bb497613b/"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <IconButton>
+                  <LinkedIn />
+                  LinkedIn
+                </IconButton>
+              </Link>
+              <Link
+                href="https://github.com/lincon-fernandes"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <IconButton>
+                  <GitHub />
+                  GitHub
+                </IconButton>
+              </Link>
+              <Link href={Resume} rel="noreferrer" target="_blank">
+                <IconButton>
+                  <InsertDriveFile />
+                  Curriculo
+                </IconButton>
+              </Link>
+            </Box>
           </Grid>
         </Grid>
         <Divider />

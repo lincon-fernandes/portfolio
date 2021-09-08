@@ -16,7 +16,7 @@ import {
   Typography,
 } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
-import { Home, Apps, ContactMail } from '@material-ui/icons';
+import { Home, Info, Apps, ContactMail } from '@material-ui/icons';
 import avatar from '../img/avatar.jpg';
 
 //CSS useStyles
@@ -46,14 +46,19 @@ const menuItems = [
     itemPath: '#',
   },
   {
+    itemIcon: <Info />,
+    itemText: 'Sobre mim',
+    itemPath: '#about',
+  },
+  {
     itemIcon: <Apps />,
-    itemText: 'Apps',
+    itemText: 'Projetos',
     itemPath: '#apps',
   },
   {
     itemIcon: <ContactMail />,
-    itemText: 'Contact',
-    itemPath: '/contact',
+    itemText: 'Contato',
+    itemPath: '#contato',
   },
 ];
 const Navbar = () => {

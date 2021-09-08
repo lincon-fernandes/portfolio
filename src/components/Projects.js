@@ -43,6 +43,7 @@ const Projects = () => {
         Projects
       </Typography>
       <Grid container spacing={3}>
+        {/* Netflix clone*/}
         <Grid item xs={12} sm={6} md={4}>
           <Card className={classes.projCard}>
             <CardActionArea>
@@ -82,17 +83,18 @@ const Projects = () => {
             </CardActions>
           </Card>
         </Grid>
+        {/* portifolio*/}
         <Grid item xs={12} sm={6} md={4}>
           <Card className={classes.projCard}>
-            <CardActionArea>
+            <CardActionArea href="https://portfolio-lincon.netlify.app/">
               <CardMedia
                 className={classes.projMedia}
                 image={Portfolio}
-                title="Netflix Clone"
+                title="Portfolio"
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="h2">
-                  Clone Netflix with React
+                  Portifolio with React
                 </Typography>
                 <Typography
                   variant="body2"
@@ -108,13 +110,20 @@ const Projects = () => {
                 <Web />
                 <Typography>Live Demo</Typography>
               </IconButton>
-              <IconButton>
-                <GitHub />
-                <Typography>Git Hub Proj</Typography>
-              </IconButton>
+              <Link
+                href="https://github.com/lincon-fernandes/portfolio"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <IconButton>
+                  <GitHub />
+                  <Typography>Git Hub Proj</Typography>
+                </IconButton>
+              </Link>
             </CardActions>
           </Card>
         </Grid>
+        {/* tiktok clone*/}
         <Grid item xs={12} sm={6} md={4}>
           <Card className={classes.projCard}>
             <CardActionArea>
@@ -125,14 +134,14 @@ const Projects = () => {
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="h2">
-                  Clone Netflix with React
+                  placeholder
                 </Typography>
                 <Typography
                   variant="body2"
                   color="textSecundary"
                   component="h2"
                 >
-                  Clone Netflix with react js using tmdb
+                  placeholder
                 </Typography>
               </CardContent>
             </CardActionArea>
@@ -148,24 +157,25 @@ const Projects = () => {
             </CardActions>
           </Card>
         </Grid>
+        {/* placeholder*/}
         <Grid item xs={12} sm={6} md={4}>
           <Card className={classes.projCard}>
             <CardActionArea>
               <CardMedia
                 className={classes.projMedia}
                 image="https://www.thewolfrock.co.uk/wp-content/uploads/2016/05/placeholder-banner-1024x485.jpg"
-                title="Netflix Clone"
+                title="placeholder"
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="h2">
-                  Clone Netflix with React
+                  placeholder
                 </Typography>
                 <Typography
                   variant="body2"
                   color="textSecundary"
                   component="h2"
                 >
-                  Clone Netflix with react js using tmdb
+                  placeholder
                 </Typography>
               </CardContent>
             </CardActionArea>
