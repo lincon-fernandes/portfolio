@@ -9,7 +9,7 @@ import {
   Typography,
   TextField,
 } from '@material-ui/core';
-import { makeStyles } from '@material-ui/core/styles';
+
 import { LinkedIn, GitHub, WhatsApp, Mail } from '@material-ui/icons';
 
 const Contact = () => {
