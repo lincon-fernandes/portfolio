@@ -12,12 +12,7 @@ import {
 import { makeStyles } from '@material-ui/core/styles';
 import { LinkedIn, GitHub, WhatsApp, Mail } from '@material-ui/icons';
 
-const useStyles = makeStyles((theme) => ({}));
 const Contact = () => {
-  const classes = useStyles((theme) => ({
-    inputSection: {},
-    infoSection: {},
-  }));
   return (
     <Container style={{ marginTop: '3rem' }}>
       <Grid container>
