@@ -8,7 +8,6 @@ import {
   IconButton,
   Divider,
   Box,
-  Link,
   CardMedia,
 } from '@material-ui/core/';
 /* import { makeStyles } from '@material-ui/core/styles'; */
@@ -26,6 +25,11 @@ const useStyles = makeStyles((theme) => ({
     width: '90%',
     margin: 'auto',
     paddingTop: '56.25%', // 16:9
+  },
+  links: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    margin: '30px 15px 5px',
   },
   about: {},
 }));
@@ -64,34 +68,29 @@ const AboutMe = () => {
               Programador iniciante, autodidata, interassado em tecnologias de
               programaçao frontend, react next e material UI,
             </Typography>
-            <Box>
-              {' '}
-              <Link
+            <Box className={classes.links}>
+              <IconButton
                 href="https://www.linkedin.com/in/lincon-fernandes-bb497613b/"
                 rel="noreferrer"
                 target="_blank"
               >
-                <IconButton>
-                  <LinkedIn />
-                  LinkedIn
-                </IconButton>
-              </Link>
-              <Link
+                <LinkedIn />
+                LinkedIn
+              </IconButton>
+
+              <IconButton
                 href="https://github.com/lincon-fernandes"
                 rel="noreferrer"
                 target="_blank"
               >
-                <IconButton>
-                  <GitHub />
-                  GitHub
-                </IconButton>
-              </Link>
-              <Link href={Resume} rel="noreferrer" target="_blank">
-                <IconButton>
-                  <InsertDriveFile />
-                  Curriculo
-                </IconButton>
-              </Link>
+                <GitHub />
+                GitHub
+              </IconButton>
+
+              <IconButton href={Resume} rel="noreferrer" target="_blank">
+                <InsertDriveFile />
+                Curriculo
+              </IconButton>
             </Box>
           </Grid>
         </Grid>

@@ -35,7 +35,7 @@ const Contact = () => {
             <Grid item md={6} xs={12}>
               <TextField required id="standard-required" label="Menssagem" />
             </Grid>
-            <Button style={{ margin: '1rem 2rem' }}>envie sua menssagem</Button>
+            <Button style={{ margin: '1rem 2rem' }}>envie sua mensagem</Button>
           </Grid>
         </Grid>
         <Grid item md={4} xs={12}>

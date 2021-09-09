@@ -28,6 +28,9 @@ const useStyles = makeStyles((theme) => ({
 
     backgroundImage:
       'url(https://images.freeimages.com/images/large-previews/443/php-code-1242330.jpg)',
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center center',
   },
 }));
 

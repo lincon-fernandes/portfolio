@@ -31,12 +31,15 @@ const useStyles = makeStyles((theme) => ({
   },
   avatar: {
     display: 'block',
-    margin: '0.5rem auto',
+    margin: '2rem auto',
     width: theme.spacing(13),
     height: theme.spacing(13),
   },
   title: {
     flexGrow: 1,
+  },
+  item: {
+    color: '#fff',
   },
 }));
 const menuItems = [
@@ -81,8 +84,13 @@ const Navbar = () => {
       <List>
         {menuItems.map((lsItem, key) => (
           <ListItem button key={key} component={Link} to={lsItem.itemPath}>
-            <ListItemIcon>{lsItem.itemIcon}</ListItemIcon>
-            <ListItemText primary={lsItem.itemText}></ListItemText>
+            <ListItemIcon className={classes.item}>
+              {lsItem.itemIcon}
+            </ListItemIcon>
+            <ListItemText
+              className={classes.item}
+              primary={lsItem.itemText}
+            ></ListItemText>
           </ListItem>
         ))}
       </List>
@@ -95,14 +103,14 @@ const Navbar = () => {
           className={classes.root}
           position="static"
           style={{
-            background: 'linear-gradient(to right, #b65aff, #2B8CAB)',
+            background: 'linear-gradient(to right, #74749f, #737373)',
           }}
         >
           <Toolbar>
             <Typography
               className={classes.title}
               variant="h5"
-              style={{ color: '#222' }}
+              style={{ color: '#fff' }}
             >
               Lincon Fernandes
             </Typography>

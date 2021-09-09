@@ -1,6 +1,7 @@
 import React from 'react';
 import Netflix from '../img/netflixPrint.jpg';
 import Portfolio from '../img/portfolioPrint.jpg';
+import Tiktok from '../img/tiktokPrint.jpg';
 import { makeStyles } from '@material-ui/core/styles';
 import {
   Container,
@@ -12,7 +13,6 @@ import {
   CardContent,
   CardActions,
   IconButton,
-  Link,
 } from '@material-ui/core/';
 import { GitHub, Web } from '@material-ui/icons';
 const useStyles = makeStyles((theme) => ({
@@ -46,7 +46,11 @@ const Projects = () => {
         {/* Netflix clone*/}
         <Grid item xs={12} sm={6} md={4}>
           <Card className={classes.projCard}>
-            <CardActionArea>
+            <CardActionArea
+              href="https://eager-goodall-bf7b41.netlify.app/"
+              rel="noreferrer"
+              target="_blank"
+            >
               <CardMedia
                 className={classes.projMedia}
                 image={Netflix}
@@ -66,20 +70,23 @@ const Projects = () => {
               </CardContent>
             </CardActionArea>
             <CardActions>
-              <IconButton>
+              <IconButton
+                href="https://eager-goodall-bf7b41.netlify.app/"
+                rel="noreferrer"
+                target="_blank"
+              >
                 <Web />
                 <Typography>Live Demo</Typography>
               </IconButton>
-              <Link
+
+              <IconButton
                 href="https://github.com/lincon-fernandes/clone-netflix-react"
                 rel="noreferrer"
                 target="_blank"
               >
-                <IconButton>
-                  <GitHub />
-                  <Typography>Git Hub Proj</Typography>
-                </IconButton>
-              </Link>
+                <GitHub />
+                <Typography>Git Hub Proj</Typography>
+              </IconButton>
             </CardActions>
           </Card>
         </Grid>
@@ -106,51 +113,62 @@ const Projects = () => {
               </CardContent>
             </CardActionArea>
             <CardActions>
-              <IconButton>
+              <IconButton href="https://portfolio-lincon.netlify.app/">
                 <Web />
                 <Typography>Live Demo</Typography>
               </IconButton>
-              <Link
+
+              <IconButton
                 href="https://github.com/lincon-fernandes/portfolio"
                 rel="noreferrer"
                 target="_blank"
               >
-                <IconButton>
-                  <GitHub />
-                  <Typography>Git Hub Proj</Typography>
-                </IconButton>
-              </Link>
+                <GitHub />
+                <Typography>Git Hub Proj</Typography>
+              </IconButton>
             </CardActions>
           </Card>
         </Grid>
         {/* tiktok clone*/}
         <Grid item xs={12} sm={6} md={4}>
           <Card className={classes.projCard}>
-            <CardActionArea>
+            <CardActionArea
+              href="https://zealous-feynman-567fa8.netlify.app/"
+              rel="noreferrer"
+              target="_blank"
+            >
               <CardMedia
                 className={classes.projMedia}
-                image="https://www.thewolfrock.co.uk/wp-content/uploads/2016/05/placeholder-banner-1024x485.jpg"
+                image={Tiktok}
                 title="Netflix Clone"
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="h2">
-                  placeholder
+                  Clone tiktok
                 </Typography>
                 <Typography
                   variant="body2"
                   color="textSecundary"
                   component="h2"
                 >
-                  placeholder
+                  Clone tiktok com Next js e styled components
                 </Typography>
               </CardContent>
             </CardActionArea>
             <CardActions>
-              <IconButton>
+              <IconButton
+                href="https://zealous-feynman-567fa8.netlify.app/"
+                rel="noreferrer"
+                target="_blank"
+              >
                 <Web />
                 <Typography>Live Demo</Typography>
               </IconButton>
-              <IconButton>
+              <IconButton
+                href="https://github.com/lincon-fernandes/clone-tiktok-nextjs"
+                rel="noreferrer"
+                target="_blank"
+              >
                 <GitHub />
                 <Typography>Git Hub Proj</Typography>
               </IconButton>
