@@ -3,20 +3,26 @@ import {
   Link,
   Container,
   Grid,
-  Button,
   Divider,
   IconButton,
   Typography,
-  TextField,
+  /* TextField,Button, */
 } from '@material-ui/core';
 
 import { LinkedIn, GitHub, WhatsApp, Mail } from '@material-ui/icons';
+import { makeStyles } from '@material-ui/core';
+const useStyles = makeStyles({
+  cttButton: {
+    marginRight: '0.3rem',
+  },
+});
 
 const Contact = () => {
+  const classes = useStyles();
   return (
     <Container id="contact" style={{ marginTop: '3rem' }}>
       <Grid container>
-        <Grid item md={8} xs={12}>
+        {/* <Grid item md={8} xs={12}>
           <Grid container>
             <Grid item md={6} xs={12}>
               <TextField required id="standard-required" label="Nome" />
@@ -37,9 +43,9 @@ const Contact = () => {
             </Grid>
             <Button style={{ margin: '1rem 2rem' }}>envie sua mensagem</Button>
           </Grid>
-        </Grid>
+        </Grid> */}
         <Grid item md={4} xs={12}>
-          <Typography>Ou entre em contato:</Typography>
+          <Typography>Entre em contato:</Typography>
           <Divider></Divider>
           <Grid container>
             <Grid item sm={12}>
@@ -47,13 +53,13 @@ const Contact = () => {
                 href="https://api.whatsapp.com/send?1=pt_BR&phone=5541987291433"
                 target="_blank"
               >
-                <WhatsApp />
+                <WhatsApp className={classes.cttButton} />
                 <Typography>41 987291433</Typography>
               </IconButton>
             </Grid>
             <Grid item sm={12}>
               <IconButton>
-                <Mail />
+                <Mail className={classes.cttButton} />
                 <Typography>lincon3013@gmail.com</Typography>
               </IconButton>
             </Grid>
@@ -65,7 +71,7 @@ const Contact = () => {
                 target="_blank"
               >
                 <IconButton>
-                  <LinkedIn />
+                  <LinkedIn className={classes.cttButton} />
                   <Typography>Linkedin</Typography>
                 </IconButton>
               </Link>
@@ -77,7 +83,7 @@ const Contact = () => {
                 target="_blank"
               >
                 <IconButton>
-                  <GitHub />
+                  <GitHub className={classes.cttButton} />
                   <Typography>GitHub</Typography>
                 </IconButton>
               </Link>

@@ -27,11 +27,13 @@ const useStyles = makeStyles((theme) => ({
     paddingTop: '56.25%', // 16:9
   },
   links: {
-    display: 'flex',
+    display: 'inline-block',
     justifyContent: 'space-between',
     margin: '30px 15px 5px',
   },
-  about: {},
+  about: {
+    paddingTop: '1rem',
+  },
 }));
 const AboutMe = () => {
   const classes = useStyles();
@@ -49,7 +51,7 @@ const AboutMe = () => {
           justifyContent="center"
           alignItems="center"
         >
-          <Grid className={classes.gridPhoto} item md={6} xs={12}>
+          <Grid item className={classes.gridPhoto} md={6} xs={12}>
             <CardMedia
               className={classes.media}
               image={Photo}
@@ -63,10 +65,11 @@ const AboutMe = () => {
             className={classes.about}
             style={{ marginTop: '0.5rem' }}
           >
-            <Typography>Sobre Mim</Typography>
+            <Typography className={classes.about}>Sobre Mim</Typography>
             <Typography style={{ marginTop: '1.5rem' }}>
-              Programador iniciante, autodidata, interassado em tecnologias de
-              programaçao frontend, react next e material UI,
+              Ola, eu me chamo Lincon sou um programador front-end, estou
+              buscando novas oportunidades de ampliar meu conhecimento,
+              atualmente meus estudos são focados em React e Next-js
             </Typography>
             <Box className={classes.links}>
               <IconButton

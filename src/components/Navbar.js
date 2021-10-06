@@ -1,23 +1,24 @@
-import React, { useState } from 'react';
-import { Link } from 'react-scroll';
+import React /* , { useState }  */ from 'react';
+//import { Link } from 'react-scroll';
 import { makeStyles } from '@material-ui/core/styles';
-import MobilRightMenuSlider from '@material-ui/core/Drawer';
+//import MobilRightMenuSlider from '@material-ui/core/Drawer';
+//import MenuIcon from '@material-ui/icons/Menu';
 import {
   AppBar,
   Toolbar,
-  ListItem,
-  IconButton,
+  /*  ListItem,
+   IconButton, 
   ListItemText,
   ListItemIcon,
   Avatar,
   Divider,
-  List,
+  List, */
   Box,
   Typography,
 } from '@material-ui/core';
-import MenuIcon from '@material-ui/icons/Menu';
-import { Home, Info, Apps, ContactMail } from '@material-ui/icons';
-import avatar from '../img/avatar.jpg';
+
+//import { Home, Info, Apps, ContactMail } from '@material-ui/icons';
+//import avatar from '../img/avatar.jpg';
 
 //CSS useStyles
 const useStyles = makeStyles((theme) => ({
@@ -42,7 +43,7 @@ const useStyles = makeStyles((theme) => ({
     color: '#fff',
   },
 }));
-const menuItems = [
+/* const menuItems = [
   {
     itemIcon: <Home />,
     itemText: 'Home',
@@ -63,17 +64,17 @@ const menuItems = [
     itemText: 'Contato',
     itemPath: '#contato',
   },
-];
+]; */
 const Navbar = () => {
   const classes = useStyles();
   //useState
-  const [state, setState] = useState({
+  /* const [state, setState] = useState({
     right: false,
-  });
-  const toggleSlider = (slider, open) => () => {
+  }); */
+  /* const toggleSlider = (slider, open) => () => {
     setState({ ...state, [slider]: open });
-  };
-  const sideList = (slider) => (
+  }; */
+  /* const sideList = (slider) => (
     <Box
       className={classes.menuSliderContainer}
       component="div"
@@ -95,7 +96,7 @@ const Navbar = () => {
         ))}
       </List>
     </Box>
-  );
+  ); */
   return (
     <>
       <Box component="nav">
@@ -115,7 +116,7 @@ const Navbar = () => {
               Lincon Fernandes
             </Typography>
 
-            <IconButton
+            {/* <IconButton
               className={classes.button}
               onClick={toggleSlider('right', true)}
             >
@@ -127,7 +128,7 @@ const Navbar = () => {
               onClose={toggleSlider('right', false)}
             >
               {sideList('right')}
-            </MobilRightMenuSlider>
+            </MobilRightMenuSlider> */}
           </Toolbar>
         </AppBar>
       </Box>

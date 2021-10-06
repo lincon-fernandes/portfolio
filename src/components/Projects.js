@@ -1,6 +1,7 @@
 import React from 'react';
 import Netflix from '../img/netflixPrint.jpg';
 import Portfolio from '../img/portfolioPrint.jpg';
+import WhatsApp from '../img/WhatsAppPrint.jpg';
 import Tiktok from '../img/tiktokPrint.jpg';
 import { makeStyles } from '@material-ui/core/styles';
 import {
@@ -181,28 +182,33 @@ const Projects = () => {
             <CardActionArea>
               <CardMedia
                 className={classes.projMedia}
-                image="https://www.thewolfrock.co.uk/wp-content/uploads/2016/05/placeholder-banner-1024x485.jpg"
+                image={WhatsApp}
                 title="placeholder"
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="h2">
-                  placeholder
+                  WhatsApp clone
                 </Typography>
                 <Typography
                   variant="body2"
                   color="textSecundary"
                   component="h2"
                 >
-                  placeholder
+                  Clone do whatsApp utilizando autentificaçao com firebase e
+                  react js
                 </Typography>
               </CardContent>
             </CardActionArea>
             <CardActions>
-              <IconButton>
+              <IconButton disabled>
                 <Web />
                 <Typography>Live Demo</Typography>
               </IconButton>
-              <IconButton>
+              <IconButton
+                href="https://github.com/lincon-fernandes/whatsappclone"
+                rel="noreferrer"
+                target="_blank"
+              >
                 <GitHub />
                 <Typography>Git Hub Proj</Typography>
               </IconButton>
