@@ -32,7 +32,7 @@ const useStyles = makeStyles((theme) => ({
     margin: '30px 15px 5px',
   },
   about: {
-    paddingTop: '1rem',
+    padding: '1rem',
   },
 }));
 const AboutMe = () => {
@@ -65,11 +65,11 @@ const AboutMe = () => {
             className={classes.about}
             style={{ marginTop: '0.5rem' }}
           >
-            <Typography className={classes.about}>Sobre Mim</Typography>
+            <Typography variant="h4">Sobre Mim</Typography>
             <Typography style={{ marginTop: '1.5rem' }}>
-              Ola, eu me chamo Lincon sou um programador front-end, estou
-              buscando novas oportunidades de ampliar meu conhecimento,
-              atualmente meus estudos são focados em React e Next-js
+              Olá, eu me chamo Lincon, iniciei meus estudos de programaçao como
+              um hobby de forma autodidata, e hoje estou buscando oportunidades
+              para aplicar meus conhecimentos de forma profissional.
             </Typography>
             <Box className={classes.links}>
               <IconButton
@@ -77,7 +77,7 @@ const AboutMe = () => {
                 rel="noreferrer"
                 target="_blank"
               >
-                <LinkedIn />
+                <LinkedIn style={{ marginRight: 5 }} />
                 LinkedIn
               </IconButton>
 
@@ -86,12 +86,12 @@ const AboutMe = () => {
                 rel="noreferrer"
                 target="_blank"
               >
-                <GitHub />
+                <GitHub style={{ marginRight: 5 }} />
                 GitHub
               </IconButton>
 
               <IconButton href={Resume} rel="noreferrer" target="_blank">
-                <InsertDriveFile />
+                <InsertDriveFile style={{ marginRight: 5 }} />
                 Curriculo
               </IconButton>
             </Box>

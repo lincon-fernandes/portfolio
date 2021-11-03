@@ -113,7 +113,7 @@ const Navbar = () => {
               variant="h5"
               style={{ color: '#fff' }}
             >
-              Lincon Fernandes
+              Lincon Pietrochinski Fernandes
             </Typography>
 
             {/* <IconButton

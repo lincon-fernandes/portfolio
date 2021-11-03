@@ -58,10 +58,13 @@ const Contact = () => {
               </IconButton>
             </Grid>
             <Grid item sm={12}>
-              <IconButton>
-                <Mail className={classes.cttButton} />
-                <Typography>lincon3013@gmail.com</Typography>
-              </IconButton>
+              {' '}
+              <Link href="mailto:lincon3013@gmail.com">
+                <IconButton>
+                  <Mail className={classes.cttButton} />
+                  <Typography>lincon3013@gmail.com</Typography>
+                </IconButton>
+              </Link>
             </Grid>
             <Divider></Divider>
             <Grid item xs={6}>
