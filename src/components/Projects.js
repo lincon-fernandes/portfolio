@@ -3,6 +3,7 @@ import Netflix from '../img/netflixPrint.jpg';
 import Portfolio from '../img/portfolioPrint.jpg';
 import WhatsApp from '../img/WhatsAppPrint.jpg';
 import Tiktok from '../img/tiktokPrint.jpg';
+import spotify from '../img/spotify_thumb.jpg';
 import { makeStyles } from '@material-ui/core/styles';
 import {
   Container,
@@ -48,7 +49,7 @@ const Projects = () => {
         <Grid item xs={12} sm={6} md={4}>
           <Card className={classes.projCard}>
             <CardActionArea
-              href="https://eager-goodall-bf7b41.netlify.app/"
+              href="https://linconnetflix.netlify.app/"
               rel="noreferrer"
               target="_blank"
             >
@@ -72,7 +73,7 @@ const Projects = () => {
             </CardActionArea>
             <CardActions>
               <IconButton
-                href="https://eager-goodall-bf7b41.netlify.app/"
+                href="https://linconnetflix.netlify.app/"
                 rel="noreferrer"
                 target="_blank"
               >
@@ -206,6 +207,48 @@ const Projects = () => {
               </IconButton>
               <IconButton
                 href="https://github.com/lincon-fernandes/whatsappclone"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <GitHub />
+                <Typography>Git Hub Proj</Typography>
+              </IconButton>
+            </CardActions>
+          </Card>
+        </Grid>
+        <Grid item xs={12} sm={6} md={4}>
+          <Card className={classes.projCard}>
+            <CardActionArea
+              href="https://eager-goodall-bf7b41.netlify.app/"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <CardMedia
+                className={classes.projMedia}
+                image={spotify}
+                title="Netflix Clone"
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5" component="h2">
+                  Clone Netflix with React
+                </Typography>
+                <Typography
+                  variant="body2"
+                  color="textSecundary"
+                  component="h2"
+                >
+                  Clone Netflix with react js using tmdb
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+            <CardActions>
+              <IconButton href="/" disable rel="noreferrer" target="_blank">
+                <Web />
+                <Typography>Live Demo</Typography>
+              </IconButton>
+
+              <IconButton
+                href="https://github.com/lincon-fernandes/lincon-fernandes-spotify-next-cloneUI"
                 rel="noreferrer"
                 target="_blank"
               >
