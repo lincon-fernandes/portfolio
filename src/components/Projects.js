@@ -1,9 +1,8 @@
 import React from 'react';
 import Netflix from '../img/netflixPrint.jpg';
 import Portfolio from '../img/portfolioPrint.jpg';
-import WhatsApp from '../img/WhatsAppPrint.jpg';
-import Tiktok from '../img/tiktokPrint.jpg';
-import spotify from '../img/spotify_thumb.jpg';
+import LandingPage from '../img/landingPagePrint.jpg';
+import Weather from '../img/weatherApp.jpg';
 import { makeStyles } from '@material-ui/core/styles';
 import {
   Container,
@@ -95,7 +94,11 @@ const Projects = () => {
         {/* portifolio*/}
         <Grid item xs={12} sm={6} md={4}>
           <Card className={classes.projCard}>
-            <CardActionArea href="https://portfolio-lincon.netlify.app/">
+            <CardActionArea
+              href="https://portfolio-lincon.netlify.app/"
+              rel="noreferrer"
+              target="_blank"
+            >
               <CardMedia
                 className={classes.projMedia}
                 image={Portfolio}
@@ -115,7 +118,11 @@ const Projects = () => {
               </CardContent>
             </CardActionArea>
             <CardActions>
-              <IconButton href="https://portfolio-lincon.netlify.app/">
+              <IconButton
+                href="https://portfolio-lincon.netlify.app/"
+                rel="noreferrer"
+                target="_blank"
+              >
                 <Web />
                 <Typography>Live Demo</Typography>
               </IconButton>
@@ -131,124 +138,91 @@ const Projects = () => {
             </CardActions>
           </Card>
         </Grid>
-        {/* tiktok clone*/}
+        {/* weather app*/}
         <Grid item xs={12} sm={6} md={4}>
           <Card className={classes.projCard}>
             <CardActionArea
-              href="https://zealous-feynman-567fa8.netlify.app/"
+              href="https://lincon-weather.netlify.app/"
               rel="noreferrer"
               target="_blank"
             >
               <CardMedia
                 className={classes.projMedia}
-                image={Tiktok}
-                title="Netflix Clone"
+                image={Weather}
+                title="Portfolio"
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="h2">
-                  Clone tiktok
+                  Weather app html, css, js
                 </Typography>
                 <Typography
                   variant="body2"
                   color="textSecundary"
                   component="h2"
                 >
-                  Clone tiktok com Next js e styled components
+                  weather app
                 </Typography>
               </CardContent>
             </CardActionArea>
             <CardActions>
               <IconButton
-                href="https://zealous-feynman-567fa8.netlify.app/"
+                href="https://lincon-weather.netlify.app/"
                 rel="noreferrer"
                 target="_blank"
               >
-                <Web />
-                <Typography>Live Demo</Typography>
-              </IconButton>
-              <IconButton
-                href="https://github.com/lincon-fernandes/clone-tiktok-nextjs"
-                rel="noreferrer"
-                target="_blank"
-              >
-                <GitHub />
-                <Typography>Git Hub Proj</Typography>
-              </IconButton>
-            </CardActions>
-          </Card>
-        </Grid>
-        {/* placeholder*/}
-        <Grid item xs={12} sm={6} md={4}>
-          <Card className={classes.projCard}>
-            <CardActionArea>
-              <CardMedia
-                className={classes.projMedia}
-                image={WhatsApp}
-                title="placeholder"
-              />
-              <CardContent>
-                <Typography gutterBottom variant="h5" component="h2">
-                  WhatsApp clone
-                </Typography>
-                <Typography
-                  variant="body2"
-                  color="textSecundary"
-                  component="h2"
-                >
-                  Clone do whatsApp utilizando autentificaçao com firebase e
-                  react js
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-            <CardActions>
-              <IconButton disabled>
-                <Web />
-                <Typography>Live Demo</Typography>
-              </IconButton>
-              <IconButton
-                href="https://github.com/lincon-fernandes/whatsappclone"
-                rel="noreferrer"
-                target="_blank"
-              >
-                <GitHub />
-                <Typography>Git Hub Proj</Typography>
-              </IconButton>
-            </CardActions>
-          </Card>
-        </Grid>
-        <Grid item xs={12} sm={6} md={4}>
-          <Card className={classes.projCard}>
-            <CardActionArea
-              href="https://eager-goodall-bf7b41.netlify.app/"
-              rel="noreferrer"
-              target="_blank"
-            >
-              <CardMedia
-                className={classes.projMedia}
-                image={spotify}
-                title="Netflix Clone"
-              />
-              <CardContent>
-                <Typography gutterBottom variant="h5" component="h2">
-                  Clone Netflix with React
-                </Typography>
-                <Typography
-                  variant="body2"
-                  color="textSecundary"
-                  component="h2"
-                >
-                  Clone Netflix with react js using tmdb
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-            <CardActions>
-              <IconButton href="/" disable rel="noreferrer" target="_blank">
                 <Web />
                 <Typography>Live Demo</Typography>
               </IconButton>
 
               <IconButton
-                href="https://github.com/lincon-fernandes/lincon-fernandes-spotify-next-cloneUI"
+                href="https://github.com/lincon-fernandes/weather-app"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <GitHub />
+                <Typography>Git Hub Proj</Typography>
+              </IconButton>
+            </CardActions>
+          </Card>
+        </Grid>
+        {/* landing page*/}
+        <Grid item xs={12} sm={6} md={4}>
+          <Card className={classes.projCard}>
+            <CardActionArea
+              href="https://lincon-aaa-fire.netlify.app/"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <CardMedia
+                className={classes.projMedia}
+                image={LandingPage}
+                title="Portfolio"
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5" component="h2">
+                  Landing page
+                </Typography>
+                <Typography
+                  variant="body2"
+                  color="textSecundary"
+                  component="h2"
+                >
+                  basic landing page using bootstrap
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+            <CardActions>
+              <IconButton
+                href="https://lincon-aaa-fire.netlify.app/"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <Web />
+                <Typography>Live Demo</Typography>
+              </IconButton>
+
+              <IconButton
+                href="https://github.com/lincon-fernandes/aaa-fire"
                 rel="noreferrer"
                 target="_blank"
               >
