@@ -31,6 +31,7 @@ const useStyles = makeStyles((theme) => ({
   },
   subtitle: {
     color: '#fff',
+    textAlign: 'center',
   },
   container: {
     position: 'relative',
@@ -96,6 +97,7 @@ const useStyles = makeStyles((theme) => ({
   },
   reactTyped: {
     textAlign: 'center',
+    alignSelf: 'center',
   },
 }));
 

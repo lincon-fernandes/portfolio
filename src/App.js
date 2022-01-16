@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <CssBaseline />
-      <Navbar />
+      {/* <Navbar /> */}
       <Header />
       <AboutMe />
       <Projects />
