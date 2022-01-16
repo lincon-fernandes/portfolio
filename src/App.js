@@ -1,5 +1,5 @@
 import CssBaseline from '@material-ui/core/CssBaseline';
-import Navbar from './components/Navbar';
+/* import Navbar from './components/Navbar'; */
 import Header from './components/Header';
 import AboutMe from './components/AboutMe';
 import Projects from './components/Projects';
