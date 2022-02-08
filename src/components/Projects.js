@@ -3,6 +3,7 @@ import Netflix from '../img/netflixPrint.jpg';
 import Portfolio from '../img/portfolioPrint.jpg';
 import LandingPage from '../img/landingPagePrint.jpg';
 import Weather from '../img/weatherApp.jpg';
+import Pacients from '../img/pacientsThumb.jpg';
 import { makeStyles } from '@material-ui/core/styles';
 import {
   Container,
@@ -66,7 +67,8 @@ const Projects = () => {
                   color="textSecundary"
                   component="h2"
                 >
-                  Clone Netflix with react js using tmdb
+                  Clone de interface da Netflix, para exercicio de React js,
+                  consumindo API do tmdb
                 </Typography>
               </CardContent>
             </CardActionArea>
@@ -153,14 +155,15 @@ const Projects = () => {
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="h2">
-                  Weather app html, css, js
+                  Weather app
                 </Typography>
                 <Typography
                   variant="body2"
                   color="textSecundary"
                   component="h2"
                 >
-                  weather app
+                  Aplicativo de clima, para exercicio de consumo de API's,
+                  utilizando apenas js vanilla
                 </Typography>
               </CardContent>
             </CardActionArea>
@@ -207,7 +210,8 @@ const Projects = () => {
                   color="textSecundary"
                   component="h2"
                 >
-                  basic landing page using bootstrap
+                  landing page simples(sem responsividade), apenas para
+                  implementação de bootstrap e exercicio de css
                 </Typography>
               </CardContent>
             </CardActionArea>
@@ -223,6 +227,54 @@ const Projects = () => {
 
               <IconButton
                 href="https://github.com/lincon-fernandes/aaa-fire"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <GitHub />
+                <Typography>Git Hub Proj</Typography>
+              </IconButton>
+            </CardActions>
+          </Card>
+        </Grid>
+        {/* acme pacients page*/}
+        <Grid item xs={12} sm={6} md={4}>
+          <Card className={classes.projCard}>
+            <CardActionArea
+              href="https://acme-pacients.netlify.app/"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <CardMedia
+                className={classes.projMedia}
+                image={Pacients}
+                title="Portfolio"
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5" component="h2">
+                  Acme pacients
+                </Typography>
+                <Typography
+                  variant="body2"
+                  color="textSecundary"
+                  component="h2"
+                >
+                  Pagina para cadastro de pacientes com verificaçao de cpf,
+                  funcionalidades de editar e remover pacientes
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+            <CardActions>
+              <IconButton
+                href="https://acme-pacients.netlify.app/"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <Web />
+                <Typography>Live Demo</Typography>
+              </IconButton>
+
+              <IconButton
+                href="https://github.com/lincon-fernandes/acme-pacients"
                 rel="noreferrer"
                 target="_blank"
               >

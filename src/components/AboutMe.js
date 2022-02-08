@@ -67,9 +67,12 @@ const AboutMe = () => {
           >
             <Typography variant="h4">Sobre Mim</Typography>
             <Typography style={{ marginTop: '1.5rem' }}>
-              Olá, eu me chamo Lincon, iniciei meus estudos de programaçao como
-              um hobby de forma autodidata, e hoje estou buscando oportunidades
-              para aplicar meus conhecimentos de forma profissional.
+              Olá eu me chamo Lincon e sou um programador iniciante, sou
+              autodidata, mas também pretendo cursar análise e desenvolvimento
+              de sistemas, dentre as tecnologias que mais estudo pode-se
+              destacar React.js e Next.js, outras tecnologias que podem ser
+              citadas em alguns projetos são: MongoDB, TypeScript, Angular,
+              MaterialUI e Tailwind.
             </Typography>
             <Box className={classes.links}>
               <IconButton

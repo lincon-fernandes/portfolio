@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
 
   avatarBox: {
     position: 'absolute',
-    top: '45vh',
+    top: '25vh',
     right: 'calc(50% - 200px)',
     zIndex: 10000,
     width: '400px',
@@ -98,6 +98,10 @@ const useStyles = makeStyles((theme) => ({
   reactTyped: {
     textAlign: 'center',
     alignSelf: 'center',
+  },
+  infoContainer: {
+    position: 'relative',
+    top: '-300px',
   },
 }));
 
